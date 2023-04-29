@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* primary colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* neutral colors */
+    --main-blue-bg: hsl(217, 54%, 11%);
+    --card-blue-bg: hsl(216, 50%, 16%);
+    --line-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* font */
+    --para-font: 18px;
+    --font-thin: 300;
+    --font-bold : 600;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body, .main_component, .info {
+    display: grid;
+}
+
+p {
+    font-size: var(--para-font);
+    color: var(--soft-blue);
+}
+
+body {
+    min-height: 100vh;
+    place-items: center;
+    background-color: var(--main-blue-bg);
+    padding: 3rem 1rem;
+}
+
+.main_component {
+    max-width: 375px;
+    padding: 1.5em;
+    background-color: var(--card-blue-bg);
+    border: none;
+    border-radius: 1em;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 20px 50px 10px;
+}
+
+.main_component > img {
+    width: 100%;
+    border: none;
+    border-radius: 0.75em;
+}
+
+.info {
+    gap: 1rem;
+}
+
+.info__desc {
+    font-weight: var(--font-thin);
+}
+
+.info__heading {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: var(--font-bold);
+    margin-top: 0.5rem;
+}
+
+.info__numericals, .left, .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.left > p {
+    color: var(--cyan);
+    font-weight: var(--font-bold);
+}
+
+hr {
+    background-color: hsla(215, 51%, 70%, 0.4);
+    height: 0.065rem;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.bottom > img {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+
+.bottom > p {
+    font-size: 0.9rem;
+}
+
+.bottom > p > span {
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: var(--white); }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
